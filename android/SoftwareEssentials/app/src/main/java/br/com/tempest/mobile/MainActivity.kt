@@ -14,8 +14,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
+        val helloWorld = HelloWorld()
+        val message = helloWorld.message ?: ""
+
+        val helloWorld2 = HelloWorld2()
+        val otherMessage = helloWorld2.message
+
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, otherMessage, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }
