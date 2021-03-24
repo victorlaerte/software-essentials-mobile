@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23432510260B83470019F8A2 /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343250E260B83470019F8A2 /* XibViewController.swift */; };
+		23432511260B83470019F8A2 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2343250F260B83470019F8A2 /* XibViewController.xib */; };
 		23F3304C260ABFD900B2F878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3304B260ABFD900B2F878 /* AppDelegate.swift */; };
 		23F3304E260ABFD900B2F878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3304D260ABFD900B2F878 /* SceneDelegate.swift */; };
 		23F33050260ABFD900B2F878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3304F260ABFD900B2F878 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2343250E260B83470019F8A2 /* XibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
+		2343250F260B83470019F8A2 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
 		23F33048260ABFD900B2F878 /* SoftwareEssentialsStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftwareEssentialsStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F3304B260ABFD900B2F878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F3304D260ABFD900B2F878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				23F33056260ABFDA00B2F878 /* LaunchScreen.storyboard */,
 				23F33059260ABFDA00B2F878 /* Info.plist */,
 				23F3307E260AC1AB00B2F878 /* ByeViewController.swift */,
+				2343250E260B83470019F8A2 /* XibViewController.swift */,
+				2343250F260B83470019F8A2 /* XibViewController.xib */,
 			);
 			path = SoftwareEssentialsStoryBoard;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23432511260B83470019F8A2 /* XibViewController.xib in Resources */,
 				23F33058260ABFDA00B2F878 /* LaunchScreen.storyboard in Resources */,
 				23F33055260ABFDA00B2F878 /* Assets.xcassets in Resources */,
 				23F33053260ABFD900B2F878 /* Main.storyboard in Resources */,
@@ -261,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23432510260B83470019F8A2 /* XibViewController.swift in Sources */,
 				23F33050260ABFD900B2F878 /* ViewController.swift in Sources */,
 				23F3307F260AC1AB00B2F878 /* ByeViewController.swift in Sources */,
 				23F3304C260ABFD900B2F878 /* AppDelegate.swift in Sources */,
