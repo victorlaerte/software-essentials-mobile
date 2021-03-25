@@ -52,6 +52,19 @@ const Section = ({children, title}): Node => {
   );
 };
 
+const Hello = (props): Node => {
+  return (
+    <View style={{
+      justifyContent: "center",
+      alignItems: "center"
+    }}>
+      <Text>
+        Hello {props.name}
+      </Text>
+    </View>
+  );
+};
+
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -60,34 +73,17 @@ const App: () => Node = () => {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step Oneeee">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+      <Hello name="Victor"/>
+      <Hello name="Vovô"/>
+      <Hello name="Software Essentials"/>
+    </View>
+  )
 };
 
 const styles = StyleSheet.create({
