@@ -6,9 +6,10 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import type {Node} from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -53,6 +54,7 @@ const Section = ({children, title}): Node => {
 };
 
 const Hello = (props): Node => {
+
   return (
     <View style={{
       justifyContent: "center",
@@ -72,6 +74,8 @@ const App: () => Node = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  const [count, setCount] = useState(0)
+
   return (
     <View
       style={{
@@ -82,6 +86,8 @@ const App: () => Node = () => {
       <Hello name="Victor"/>
       <Hello name="Vovô"/>
       <Hello name="Software Essentials"/>
+      <Text> Click counter: {count} </Text> 
+      <Button title="Add count" onPress={() => setCount(count + 1)} ></Button>
     </View>
   )
 };
