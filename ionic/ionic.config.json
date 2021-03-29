@@ -1,0 +1,8 @@
+{
+  "name": "SoftwareEssentials",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "2d3373f1"
+}
